@@ -39,7 +39,7 @@ add_subdirectory(thirdparty/stb_truetype)		#loading ttf files
 #add_subdirectory(thirdparty/enet-1.3.17)		#networking
 add_subdirectory(thirdparty/raudio)				#audio
 add_subdirectory(thirdparty/glm)				#math
-add_subdirectory(thirdparty/imgui-docking)		#ui
+#add_subdirectory(thirdparty/imgui-docking)		#ui
 add_subdirectory(thirdparty/bgfx)				#rendering
 
 
@@ -92,6 +92,6 @@ target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURC
 
 #enet not working yet on linux for some reason
 target_link_libraries("${CMAKE_PROJECT_NAME}" PRIVATE glm glfw 
-	stb_image stb_truetype raudio imgui bgfx)
+	stb_image stb_truetype raudio bgfx)
 
 
